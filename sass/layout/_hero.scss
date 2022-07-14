@@ -1,0 +1,140 @@
+
+
+
+@include mq(mob-only) {
+    .hero {
+&__container {
+    width: 320px;
+    height: 502px;
+    background-color: #ffb8ca;
+    background-image: url('/images/icecrem.svg'), url('/images/ellipse.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left 117px, bottom 75px right 0px;
+}
+&__title {
+    width: 216px;
+    height: 106px;
+    color: $white-color;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+&__title-word {
+    color: $main-color;
+    font-size: 48px;
+    line-height: 1.04;
+    text-transform: uppercase;
+}
+
+&__content {
+    padding-top: 156px;
+    padding-bottom: 158px;
+    margin-left: 20px;
+}
+&__content-list {
+    display: none;
+}
+&__paragraph {
+    display: none;
+}
+}
+    }
+
+
+@include mq(tab-only) {
+    .hero {
+&__container {
+    position: relative;
+    max-width: 768px;
+    height: 502px;
+    background-color: #ffb8ca;
+    background-image: url('/images/ice-cream-tablet.svg'), url('/images/slider-pic-tablet.svg'), 
+    url('/images/slider-pic-tablet1.svg'), url('/images/ellipse-tablet.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left 322px, bottom 16px left 32px, bottom 1px right 32px, left 248px bottom 40px;
+}
+&__content {
+    padding-top: 156px;
+    padding-bottom: 158px;
+    margin-left: 20px;
+}
+&__title {
+width: 162px;
+height: 80px;
+color: $white-color;
+font-size: 22px;
+line-height: 1.13;
+letter-spacing: 0.04em;
+text-transform: uppercasex;
+}
+
+&__title-word {
+    color: $main-color;
+    font-size: 34px;
+    line-height: 1.09;
+    letter-spacing: 0.04;
+    text-transform: uppercase;
+}
+
+&__paragraph {
+    color: white;
+    max-width: 115px;
+    font-size: 8px;
+    line-height: 1.5;
+    position: absolute;
+    left: 212px;
+    bottom: 41px;
+}
+&__content-list {
+    position: absolute;
+    right: 42px;
+    top: 94px;
+}
+.hero__content-item {
+    background-image: url(/images/ellipse-white.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+}
+.hero__content-number {
+    color: $main-color;
+font-size: 28px;
+line-height: 1.14;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+text-align: left;
+}
+.hero__content-words {
+color: $white-color;
+font-size: 8px;
+line-height: 1.25;
+text-align: right;
+}
+}
+    }
+
+@include mq(desk) {
+    .hero {
+        max-width: 1280px;
+&__container {
+    max-width: 1200px;
+    height: 664px;
+    background-color: #ffb8ca;
+    background-image: url('/images/ice-cream-desktop.svg'), url('/images/slider-desktop.svg'), 
+    url('/images/slider-1-desktop.svg'), url('/images/ellipse-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right 368px bottom 0px, bottom 60px left 56px, bottom 1px right 56px, right 189px bottom 76px;
+}
+&__title {
+width: 162px;
+height: 80px;
+}
+&__paragraph {
+    max-width: 200px;
+    font-size: 14px;
+}
+    }
+
+}
